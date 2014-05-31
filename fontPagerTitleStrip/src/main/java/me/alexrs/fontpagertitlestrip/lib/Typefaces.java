@@ -40,7 +40,7 @@ public class Typefaces {
 
     }
 
-    
+
     private static Typeface cachedTypeface(String assetPath, Typeface t) {
         synchronized (CACHE) {
             if (!CACHE.containsKey(assetPath)) {
