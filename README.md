@@ -14,8 +14,7 @@ You can use the following attributes:
 	android:layout_width="match_parent"
 	android:layout_height="30dp"
 	app:fontFamily="sans-serif|sans-serif-light|sans-serif-condensed|sans-serif-thin"
-	app:textStyle="normal|bold|italic"
-	/>
+	app:textStyle="normal|bold|italic" />
 ```
 
 Also, this library provides the following methods to customize the font and the appearance of your `FontPagerTitleStrip`
