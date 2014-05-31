@@ -3,7 +3,7 @@ FontPagerTitleStrip
 
 Library that allows you to customize the font of a `PagerTitleStrip`.
 
-![image](/Users/Alejandro/Dropbox/Cargas de cámara/2014-05-31 18.10.43.png)
+![image](IMG_20140531_205042.jpg)
 
 ## Usage
  
