@@ -24,7 +24,7 @@ Text style:
 app:textStyle="normal|bold|italic"
 ```
 
-Also, this library provides the following methods to customize the font and the appearence of your `PagerTitleStrip`
+Also, this library provides the following methods to customize the font and the appearance of your `PagerTitleStrip`
 
 ```JAVA
 FontPagerTitleStrip mPagerTitleStrip = (FontPagerTitleStrip) findViewById(R.id.titlestrip);
