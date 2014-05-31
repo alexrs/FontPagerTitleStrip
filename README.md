@@ -29,7 +29,7 @@ mPagerTitleStrip.setTypefaceByFontFamily.setTypefaceByFontFamily("sans-serif-lig
 
 mPagerTitleStrip.setTypefaceFromAssets("fonts/myfont.ttf");
 
-Typeface mTypeface = Typeface.createFromAsset(getAssets(), "fonts/myfont");
+Typeface mTypeface = Typeface.createFromAsset(getAssets(), "fonts/myfont.ttf");
 mTitleStrip.setTypeface(mTypeface, "myfont");
 ```
 
