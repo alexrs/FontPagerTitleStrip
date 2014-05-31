@@ -12,10 +12,10 @@ import android.widget.TextView;
  */
 public class FontPagerTitleStrip extends PagerTitleStrip {
 
-    /**  */
     private Typeface mTypeface;
 
     private int textStyle;
+
     private String fontFamily = "sans-serif";
 
     public FontPagerTitleStrip(Context context) {
@@ -43,38 +43,36 @@ public class FontPagerTitleStrip extends PagerTitleStrip {
     }
 
     /**
-     * @param fontFamily
+     * @param fontFamily the font family
      */
     public void setTypefaceByFontFamily(String fontFamily) {
         mTypeface = Typefaces.get(fontFamily);
     }
 
     /**
-     * @param fontFamily
-     * @param textStyle
+     * @param fontFamily the font family
+     * @param textStyle the text style (BOLD, ITALIC...)
      */
     public void setTypefaceByFontFamily(String fontFamily, int textStyle) {
         mTypeface = Typefaces.get(fontFamily, textStyle);
     }
 
     /**
-     * @param typeface
-     * @param tag
+     * @param typeface your Typeface
+     * @param tag a tag for the cache
      */
     public void setTypeface(Typeface typeface, String tag) {
         mTypeface = Typefaces.get(typeface, tag);
     }
 
     /**
-     * @param assetPath
+     * @param assetPath the path where your font is located
      */
     public void setTypefaceFromAssets(String assetPath) {
         mTypeface = Typefaces.get(getContext(), assetPath);
     }
 
-    /**
-     * @return
-     */
+
     public Typeface getTypeface() {
         return mTypeface;
     }
