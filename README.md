@@ -7,32 +7,28 @@ Library that allows you to customize the font of a `PagerTitleStrip`.
 
 ## Usage
  
+You can use the following attributes:
 ```XML
 <me.alexrs.fontpagertitlestrip.lib.FontPagerTitleStrip
 	android:id="@+id/titlestrip"
 	android:layout_width="match_parent"
-	android:layout_height="30dp
-```
-You can use the following attributes:
-
-Font family:
-```XML
-app:fontFamily="sans-serif|sans-serif-light|sans-serif-condensed|sans-serif-thin"
-```
-Text style:
-```XML
-app:textStyle="normal|bold|italic"
+	android:layout_height="30dp"
+	app:fontFamily="sans-serif|sans-serif-light|sans-serif-condensed|sans-serif-thin"
+	app:textStyle="normal|bold|italic" />
 ```
 
-Also, this library provides the following methods to customize the font and the appearance of your `PagerTitleStrip`
+Also, this library provides the following methods to customize the font and the appearance of your `FontPagerTitleStrip`
 
 ```JAVA
 FontPagerTitleStrip mPagerTitleStrip = (FontPagerTitleStrip) findViewById(R.id.titlestrip);
-// You can use sans-serif|sans-serif-light|sans-serif condensed|sans-serif-thin
-mPagerTitleStrip.setTypefaceByFontFamily("sans-serif-condensed");
+
+mPagerTitleStrip.setTypefaceByFontFamily("sans-serif-condensed"); // You can use sans-serif|sans-serif-light|sans-serif-condensed|sans-serif-thin
+
 mPagerTitleStrip.setTypefaceByFontFamily.setTypefaceByFontFamily("sans-serif-light", Typeface.BOLD);
-mTitleStrip.setTypefaceFromAssets("fonts/myfont.ttf");
-Typeface mTypeface = Typeface.createFromAsset(getAssets(), "fonts/myfont");
+
+mPagerTitleStrip.setTypefaceFromAssets("fonts/myfont.ttf");
+
+Typeface mTypeface = Typeface.createFromAsset(getAssets(), "fonts/myfont.ttf");
 mTitleStrip.setTypeface(mTypeface, "myfont");
 ```
 
