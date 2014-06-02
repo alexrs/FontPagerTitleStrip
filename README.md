@@ -16,18 +16,26 @@ You can use the following attributes:
 	app:fontFamily="sans-serif|sans-serif-light|sans-serif-condensed|sans-serif-thin"
 	app:textStyle="normal|bold|italic" />
 ```
-
+## Show me the code!
 Also, this library provides the following methods to customize the font and the appearance of your `FontPagerTitleStrip`
 
 ```JAVA
 FontPagerTitleStrip mPagerTitleStrip = (FontPagerTitleStrip) findViewById(R.id.titlestrip);
-
+```
+- By font family. (sans-serif | sans-serif-light | sans-serif-condensed | sans-serif-thin)
+```JAVA
 mPagerTitleStrip.setTypefaceByFontFamily("sans-serif-condensed"); // You can use sans-serif|sans-serif-light|sans-serif-condensed|sans-serif-thin
-
-mPagerTitleStrip.setTypefaceByFontFamily.setTypefaceByFontFamily("sans-serif-light", Typeface.BOLD);
-
+```
+- By font family, but you can also determine the font style.
+```JAVA
+mPagerTitleStrip.setTypefaceByFontFamily("sans-serif-light", Typeface.BOLD);
+````
+- From assets
+```JAVA
 mPagerTitleStrip.setTypefaceFromAssets("fonts/myfont.ttf");
-
+````
+- With your own `Typeface`
+```JAVA
 Typeface mTypeface = Typeface.createFromAsset(getAssets(), "fonts/myfont.ttf");
 mTitleStrip.setTypeface(mTypeface, "myfont");
 ```
