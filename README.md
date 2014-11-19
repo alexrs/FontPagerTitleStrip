@@ -7,6 +7,11 @@ Library that allows you to customize the font of a `PagerTitleStrip`.
 ![image](IMG_20140531_205042.jpg)
 
 ## Usage
+
+###Download
+```groovy
+compile 'me.alexrs:font-pager-titlestrip:1.0.0'
+```
  
 You can use the following attributes:
 ```XML
