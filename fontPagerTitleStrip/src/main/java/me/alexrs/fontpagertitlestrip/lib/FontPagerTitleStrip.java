@@ -7,14 +7,9 @@ import android.support.v4.view.PagerTitleStrip;
 import android.util.AttributeSet;
 import android.widget.TextView;
 
-/**
- * Created by Alejandro on 26/05/14.
- */
 public class FontPagerTitleStrip extends PagerTitleStrip {
 
     private Typeface mTypeface;
-
-    private int textStyle;
 
     private String fontFamily = "sans-serif";
 
@@ -32,7 +27,7 @@ public class FontPagerTitleStrip extends PagerTitleStrip {
         if (attrs != null) {
             TypedArray a = context.obtainStyledAttributes(attrs, R.styleable.FontPagerTitleStrip);
 
-            textStyle = a.getInt(R.styleable.FontPagerTitleStrip_textStyle, 0);
+            int textStyle = a.getInt(R.styleable.FontPagerTitleStrip_textStyle, 0);
             if (a.hasValue(R.styleable.FontPagerTitleStrip_fontFamily))
                 fontFamily = a.getString(R.styleable.FontPagerTitleStrip_fontFamily);
 
@@ -51,7 +46,7 @@ public class FontPagerTitleStrip extends PagerTitleStrip {
 
     /**
      * @param fontFamily the font family
-     * @param textStyle the text style (BOLD, ITALIC...)
+     * @param textStyle  the text style (BOLD, ITALIC...)
      */
     public void setTypefaceByFontFamily(String fontFamily, int textStyle) {
         mTypeface = Typefaces.get(fontFamily, textStyle);
@@ -59,7 +54,7 @@ public class FontPagerTitleStrip extends PagerTitleStrip {
 
     /**
      * @param typeface your Typeface
-     * @param tag a tag for the cache
+     * @param tag      a tag for the cache
      */
     public void setTypeface(Typeface typeface, String tag) {
         mTypeface = Typefaces.get(typeface, tag);

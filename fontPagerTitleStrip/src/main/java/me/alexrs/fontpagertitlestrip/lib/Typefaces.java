@@ -6,9 +6,6 @@ import android.util.Log;
 
 import java.util.Hashtable;
 
-/**
- * Created by Alejandro on 26/05/14.
- */
 public class Typefaces {
 
     private static final String TAG = "Typefaces";
@@ -26,7 +23,6 @@ public class Typefaces {
         Typeface t = Typeface.create(familyName, style);
         return cachedTypeface(familyName, t);
     }
-
 
 
     public static Typeface get(Typeface typeface, String id) {
